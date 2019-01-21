@@ -1,0 +1,9 @@
+[user]
+	name = Akio Taniguchi
+	email = taniguchi@a.phys.nagoya-u.ac.jp
+[core]
+	excludesfile = /Users/akio/.gitignore_global
+[hub]
+	protocol = https
+[credential]
+	helper = osxkeychain
