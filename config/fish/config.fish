@@ -9,3 +9,8 @@ if not functions -q fisher
 
     fish -c fisher
 end
+
+# pipenv and pyenv
+set -x PYENV_ROOT $HOME/.pyenv
+set -x PIPENV_VENV_IN_PROJECT 1
+pyenv init - | source
