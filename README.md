@@ -1,2 +1,2 @@
 # dotfiles
-:penguin: Personal dotfiles powered by thoughtbot/rcm
+:penguin: Personal public dotfiles powered by thoughtbot/rcm
