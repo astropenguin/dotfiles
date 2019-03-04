@@ -3,20 +3,20 @@
     "workbench.colorTheme": "Iceberg",
     "workbench.iconTheme": "material-icon-theme",
     "workbench.activityBar.visible": false,
+    "editor.minimap.enabled": false,
     "editor.fontFamily": "Ricty, Menlo, Monaco",
     "editor.fontSize": 14,
-    "editor.minimap.enabled": false,
 
     // editor
     "editor.wordWrap": "on",
-    "editor.renderWhitespace": "boundary",
-    "editor.renderControlCharacters": true,
     "editor.formatOnSave": true,
+    "editor.renderControlCharacters": true,
+    "editor.renderWhitespace": "boundary",
     "files.trimTrailingWhitespace": true,
 
     // git
-    "git.confirmSync": false,
     "git.autofetch": true,
+    "git.confirmSync": false,
 
     // vim
     "vim.leader": "<space>",
