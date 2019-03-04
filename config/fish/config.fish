@@ -14,3 +14,7 @@ end
 set -x PYENV_ROOT $HOME/.pyenv
 set -x PIPENV_VENV_IN_PROJECT 1
 pyenv init - | source
+
+# am
+set -x AM_CACHE_PATH $HOME/.am
+mkdir -p $AM_CACHE_PATH
