@@ -1,4 +1,4 @@
-# fish shell: bootstrap installation of fisher
+# fish: bootstrap installation of fisher
 if not functions -q fisher
     set -q XDG_CONFIG_HOME; or set XDG_CONFIG_HOME ~/.config
     set FISH_FUNC_DIR $XDG_CONFIG_HOME/fish/functions
@@ -10,11 +10,14 @@ if not functions -q fisher
     fish -c fisher
 end
 
+# fish: basic environment variables
+set -x EDITOR vim
+
 # Python: pipenv and pyenv
 set -x PYENV_ROOT $HOME/.pyenv
 set -x PIPENV_VENV_IN_PROJECT 1
 pyenv init - | source
 
-# am
+# Tools: am
 set -x AM_CACHE_PATH $HOME/.am
 mkdir -p $AM_CACHE_PATH
