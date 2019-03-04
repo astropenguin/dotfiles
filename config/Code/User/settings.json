@@ -1,0 +1,51 @@
+{
+    // preferences
+    "workbench.colorTheme": "Iceberg",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.activityBar.visible": false,
+    "editor.fontFamily": "Ricty, Menlo, Monaco",
+    "editor.fontSize": 14,
+    "editor.minimap.enabled": false,
+
+    // editor
+    "editor.wordWrap": "on",
+    "editor.renderWhitespace": "boundary",
+    "editor.renderControlCharacters": true,
+    "editor.formatOnSave": true,
+    "files.trimTrailingWhitespace": true,
+
+    // git
+    "git.confirmSync": false,
+    "git.autofetch": true,
+
+    // vim
+    "vim.leader": "<space>",
+    "vim.easymotion": true,
+    "vim.useSystemClipboard": true,
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j", "j"],
+            "after": ["<Esc>"]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["j"],
+            "after": ["g", "j"]
+        },
+        {
+            "before": ["k"],
+            "after": ["g", "k"]
+        }
+    ],
+
+    // latex
+    "latex-workshop.view.pdf.viewer": "tab",
+
+    // python
+    "python.linting.enabled": false,
+
+    // terminal
+    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.shell.osx": "/usr/local/bin/fish",
+}
