@@ -18,6 +18,10 @@ set -x PYENV_ROOT $HOME/.pyenv
 set -x PIPENV_VENV_IN_PROJECT 1
 pyenv init - | source
 
-# Tools: am
+# Tool: am
 set -x AM_CACHE_PATH $HOME/.am
 mkdir -p $AM_CACHE_PATH
+
+# Tool: Java SE 8
+set -x JAVA_HOME (/usr/libexec/java_home -v "1.8")
+set -x PATH $JAVA_HOME/bin $PATH
