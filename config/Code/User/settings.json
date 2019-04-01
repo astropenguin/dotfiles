@@ -13,6 +13,7 @@
     "editor.renderControlCharacters": true,
     "editor.renderWhitespace": "boundary",
     "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
     "workbench.startupEditor": "newUntitledFile",
 
     // git
