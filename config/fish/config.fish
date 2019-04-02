@@ -15,7 +15,6 @@ set -x EDITOR vim
 
 # Python: pipenv and pyenv
 set -x PYENV_ROOT $HOME/.pyenv
-set -x PIPENV_VENV_IN_PROJECT 1
 pyenv init - | source
 
 # Tool: am
