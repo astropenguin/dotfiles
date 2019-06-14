@@ -2,7 +2,7 @@
     // preferences
     "workbench.colorTheme": "Iceberg",
     "workbench.iconTheme": "material-icon-theme",
-    "workbench.activityBar.visible": false,
+    "workbench.activityBar.visible": true,
     "editor.minimap.enabled": false,
     "editor.fontFamily": "Ricty, Menlo, Monaco",
     "editor.fontSize": 14,
@@ -46,6 +46,7 @@
 
     // python
     "python.linting.enabled": false,
+    "python.formatting.provider": "none",
 
     // terminal
     "terminal.integrated.fontSize": 14,
