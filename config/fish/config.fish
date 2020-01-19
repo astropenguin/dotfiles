@@ -1,27 +1,21 @@
-# fish: bootstrap installation of fisher
-if not functions -q fisher
-    set -q XDG_CONFIG_HOME; or set XDG_CONFIG_HOME ~/.config
-    set FISH_FUNC_DIR $XDG_CONFIG_HOME/fish/functions
-
-    echo -n 'Downloading fisher...'
-    curl -sLo $FISH_FUNC_DIR/fisher.fish --create-dirs https://git.io/fisher
-    echo ' done!'
-
-    fish -c fisher
-end
-
-# fish: basic environment variables
+# fish: environment variables
 set -x EDITOR vim
 
-# Python: pipenv and pyenv
+# fish: aliases
+alias rm "rm -i"
+
+# tool: pipenv and pyenv
 set -x PYENV_ROOT $HOME/.pyenv
 set -x PIPENV_VENV_IN_PROJECT 1
 pyenv init - | source
 
-# Tool: am
+# tool: am
 set -x AM_CACHE_PATH $HOME/.am
 mkdir -p $AM_CACHE_PATH
 
-# Tool: Java SE 8
+# tool: Java SE 8
 set -x JAVA_HOME (/usr/libexec/java_home -v "1.8")
 set -x PATH $JAVA_HOME/bin $PATH
+
+# tool: fls/fcd
+source /usr/local/etc/fcd.fish
