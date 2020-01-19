@@ -1,54 +1,49 @@
 {
-    // preferences
+    // workbench
     "workbench.colorTheme": "Iceberg",
     "workbench.iconTheme": "material-icon-theme",
     "workbench.activityBar.visible": true,
-    "editor.minimap.enabled": false,
-    "editor.fontFamily": "Ricty, Menlo, Monaco",
-    "editor.fontSize": 14,
-
+    "workbench.startupEditor": "newUntitledFile",
     // editor
+    "editor.fontSize": 14,
+    "editor.fontFamily": "Hackgen",
+    "editor.minimap.enabled": true,
     "editor.wordWrap": "on",
-    "editor.formatOnSave": true,
     "editor.renderControlCharacters": true,
     "editor.renderWhitespace": "boundary",
+    // files
     "files.trimTrailingWhitespace": true,
     "files.insertFinalNewline": true,
-    "workbench.startupEditor": "newUntitledFile",
-
+    // terminal
+    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.shell.osx": "/usr/local/bin/fish",
     // git
     "git.autofetch": true,
     "git.confirmSync": false,
-
+    // python
+    "python.linting.enabled": false,
+    "python.formatting.provider": "none",
+    // latex
+    "latex-workshop.view.pdf.viewer": "tab",
+    "latex-workshop.latex.recipe.default": "lastUsed",
     // vim
     "vim.leader": "<space>",
     "vim.easymotion": true,
     "vim.useSystemClipboard": true,
     "vim.insertModeKeyBindings": [
         {
-            "before": ["j", "j"],
-            "after": ["<Esc>"]
+            "before": [ "j", "j" ],
+            "after": [ "<Esc>" ]
         }
     ],
     "vim.normalModeKeyBindingsNonRecursive": [
         {
-            "before": ["j"],
-            "after": ["g", "j"]
+            "before": [ "j" ],
+            "after": [ "g", "j" ]
         },
         {
-            "before": ["k"],
-            "after": ["g", "k"]
+            "before": [ "k" ],
+            "after": [ "g", "k" ]
         }
     ],
-
-    // latex
-    "latex-workshop.view.pdf.viewer": "tab",
-
-    // python
-    "python.linting.enabled": false,
-    "python.formatting.provider": "none",
-
-    // terminal
-    "terminal.integrated.fontSize": 14,
-    "terminal.integrated.shell.osx": "/usr/local/bin/fish",
 }
