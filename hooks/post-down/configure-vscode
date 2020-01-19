@@ -1,0 +1,9 @@
+#!/bin/bash
+
+if [ $(uname) != "Darwin" ]; then
+    exit 0
+fi
+
+echo "Configuring VS Code ..."
+DSTDIR=${HOME}/Library/Application\ Support/Code/User
+rm -f "${DSTDIR}/settings.json"
