@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if [ -z "$DOTDEPLOY" ]; then
+    exit 1
+fi
+
+git clone https://github.com/tmux-plugins/tpm $HOME/.tmux/plugins/tpm
+$HOME/.tmux/plugins/tpm/bin/install_plugins
