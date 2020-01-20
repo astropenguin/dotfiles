@@ -6,7 +6,7 @@
     "workbench.startupEditor": "newUntitledFile",
     // editor
     "editor.fontSize": 14,
-    "editor.fontFamily": "HackGen",
+    "editor.fontFamily": "HackGen, Menlo",
     "editor.minimap.enabled": true,
     "editor.wordWrap": "on",
     "editor.renderControlCharacters": true,
@@ -16,7 +16,7 @@
     "files.insertFinalNewline": true,
     // terminal
     "terminal.integrated.fontSize": 14,
-    "terminal.integrated.fontFamily": "HackGen",
+    "terminal.integrated.fontFamily": "HackGen, Menlo",
     "terminal.integrated.shell.osx": "/usr/local/bin/fish",
     // git
     "git.autofetch": true,
