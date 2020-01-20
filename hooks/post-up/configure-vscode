@@ -8,5 +8,5 @@ echo "Configuring VS Code ..."
 SRCDIR=${HOME}/.config/Code/User
 DSTDIR=${HOME}/Library/Application\ Support/Code/User
 
-mkdir -p ${DSTDIR}
+mkdir -p "${DSTDIR}"
 ln -sf "${SRCDIR}/settings.json" "${DSTDIR}/settings.json"
