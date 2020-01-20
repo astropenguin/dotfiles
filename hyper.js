@@ -47,9 +47,16 @@ module.exports = {
     quickEdit: false,
     macOptionSelectionMode: 'vertical',
     webGLRenderer: true,
+    summon: {
+      hotkey: 'Option+Space',
+    }
   },
-  plugins: ["hyper-iceberg"],
+  plugins: [
+    "hyper-iceberg",
+    "hyper-search",
+    "hyper-statusline",
+    "hyperterm-summon",
+  ],
   localPlugins: [],
-  keymaps: {
-  },
+  keymaps: {},
 };
