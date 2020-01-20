@@ -6,6 +6,10 @@ if [ ! -e ${FISH} ]; then
     exit 0
 fi
 
+if [ ${SHELL} = ${FISH} ]; then
+    exit 0
+fi
+
 echo "Configuring fish ..."
-sudo bash -c "echo /usr/local/bin/fish >> /etc/shells"
-sudo chsh -s /usr/local/bin/fish
+sudo bash -c "echo ${FISH} >> /etc/shells"
+sudo chsh -s ${FISH}
