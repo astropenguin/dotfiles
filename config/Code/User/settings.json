@@ -21,6 +21,7 @@
     // git
     "git.autofetch": true,
     "git.confirmSync": false,
+    "git.suggestSmartCommit": false,
     // python
     "python.linting.enabled": false,
     "python.formatting.provider": "none",
