@@ -1,14 +1,17 @@
 # fish: aliases
 alias rm "rm -i"
 
-# tool: vim
-if type -q vim
-    set -x EDITOR vim
-end
+# fish: greeting
+set fish_greeting
 
 # tool: pyenv
 if type -q pyenv
     pyenv init - | source
+end
+
+# tool: direnv
+if type -q direnv
+    direnv hook fish | source
 end
 
 # tool: am
@@ -20,4 +23,9 @@ end
 # tool: fls & fcd
 if type -q fls
     source /usr/local/etc/fcd.fish
+end
+
+# tool: vim
+if type -q vim
+    set -x EDITOR vim
 end
