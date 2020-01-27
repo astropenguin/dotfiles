@@ -1,8 +1,13 @@
-# fish: aliases
-alias rm "rm -i"
-
 # fish: greeting
 set fish_greeting
+
+# fish: aliases (rm)
+if type -q gmv
+    mkdir -p $HOME/.Trash
+    alias rm "gmv -t $HOME/.Trash"
+else
+    alias rm "rm -i"
+end
 
 # tool: pyenv
 if type -q pyenv
