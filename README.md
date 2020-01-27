@@ -1,6 +1,6 @@
 # dotfiles
 
-:penguin: Personal dotfiles powered by thoughtbot/rcm
+:penguin: Personal dotfiles managed by [rcm]
 
 ## Usage
 
@@ -8,3 +8,6 @@
 $ git clone https://github.com/astropenguin/dotfiles.git ~/.dotfiles
 $ env RCRC=$HOME/.dotfiles/rcrc rcup
 ```
+
+<!-- references -->
+[rcm]: https://github.com/thoughtbot/rcm
