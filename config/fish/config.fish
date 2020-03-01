@@ -4,7 +4,7 @@ set fish_greeting
 # fish: aliases (rm)
 if type -q gmv
     mkdir -p $HOME/.Trash
-    alias rm "gmv -t $HOME/.Trash"
+    alias rm "gmv --backup=numbered -t $HOME/.Trash"
 else
     alias rm "rm -i"
 end
