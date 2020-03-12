@@ -1,12 +1,17 @@
 # fish: greeting
 set fish_greeting
 
-# fish: aliases (rm)
+# fish aliases: rm
 if type -q gmv
     mkdir -p $HOME/.Trash
     alias rm "gmv --backup=numbered -t $HOME/.Trash"
 else
     alias rm "rm -i"
+end
+
+# fish aliases: ls
+if type -q exa
+    alias ls "exa --header --git --grid --time-style=long-iso"
 end
 
 # tool: pyenv
