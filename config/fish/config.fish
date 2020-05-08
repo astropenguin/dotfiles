@@ -24,6 +24,11 @@ if type -q direnv
     direnv hook fish | source
 end
 
+# tool: poetry
+if type -q poetry
+    set -x POETRY_VIRTUALENVS_IN_PROJECT true
+end
+
 # tool: am
 if type -q am
     set -x AM_CACHE_PATH $HOME/.config/am
