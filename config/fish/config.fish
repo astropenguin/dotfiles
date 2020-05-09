@@ -27,6 +27,7 @@ end
 # tool: poetry
 if type -q poetry
     set -x POETRY_VIRTUALENVS_IN_PROJECT true
+    alias run "poetry run"
 end
 
 # tool: am
