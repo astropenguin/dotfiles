@@ -14,6 +14,11 @@ if type -q exa
     alias ls "exa --header --git --grid --time-style=long-iso"
 end
 
+# python
+if test -f $HOME/.pythonrc
+    set -x PYTHONSTARTUP $HOME/.pythonrc
+end
+
 # tool: pyenv
 if type -q pyenv
     pyenv init - | source
@@ -26,8 +31,14 @@ end
 
 # tool: poetry
 if type -q poetry
-    set -x POETRY_VIRTUALENVS_IN_PROJECT true
+    set -x POETRY_VIRTUALENVS_IN_PROJECT 1
     alias run "poetry run"
+end
+
+# tool: pipenv
+if type -q pipenv
+    set -x PIPENV_VENV_IN_PROJECT 1
+    set -x PIPENV_VERBOSITY -1
 end
 
 # tool: am

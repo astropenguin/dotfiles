@@ -1,0 +1,49 @@
+#!/usr/bin/env python
+
+
+# helper functions
+def _import_module(module_name, alias=None):
+    from importlib import import_module
+
+    try:
+        module = import_module(module_name)
+    except ModuleNotFoundError:
+        return
+
+    if alias is not None:
+        globals()[alias] = module
+    else:
+        globals()[module_name] = module
+
+
+def _import_attr(module_name, attr_name, alias=None):
+    from importlib import import_module
+
+    try:
+        module = import_module(module_name)
+    except ModuleNotFoundError:
+        return
+
+    try:
+        attr = getattr(module, attr_name)
+    except AttributeError:
+        return
+
+    if alias is not None:
+        globals()[alias] = attr
+    else:
+        globals()[attr_name] = attr
+
+
+# standard library
+import os
+import re
+import sys
+_import_attr("pathlib", "Path")
+
+
+# external packages
+_import_module("numpy", "np")
+_import_module("pandas", "pd")
+_import_module("xarray", "xr")
+_import_module("matplotlib.pyplot", "plt")
