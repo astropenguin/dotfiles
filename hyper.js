@@ -52,6 +52,7 @@ module.exports = {
     }
   },
   plugins: [
+    "hypercwd",
     "hyper-iceberg",
     "hyper-search",
     "hyper-statusline",
