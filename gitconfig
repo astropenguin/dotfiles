@@ -3,3 +3,5 @@
 	email = taniguchi@a.phys.nagoya-u.ac.jp
 [core]
 	excludesfile = ~/.gitignore_global
+[pull]
+	rebase = false
