@@ -10,8 +10,7 @@ function vpn -d "Connect/disconnect Cisco VPN"
       $vpn disconnect
     case status
       $vpn state
-    case '*'
-      echo Invalid option: $option
-      return 1
+    case "*"
+      echo "Usage: vpn [connect|disconnect|status]"
   end
 end
