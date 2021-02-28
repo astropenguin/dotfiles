@@ -45,6 +45,7 @@ call plug#end()
 " color scheme
 syntax enable
 set termguicolors
+set background=dark
 colorscheme iceberg
 
 " status line
