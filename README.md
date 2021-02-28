@@ -1,6 +1,6 @@
 # dotfiles
 
-:penguin: Personal dotfiles managed by [rcm](https://github.com/thoughtbot/rcm)
+Personal dotfiles managed by rcm
 
 ## Usage
 
