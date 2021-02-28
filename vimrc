@@ -1,17 +1,14 @@
-" .vimrc
-
-" preferences
+" settings
+set clipboard=unnamed
 set list
+set listchars=tab:>-,space:.
+set nobackup
+set noswapfile
+set noundofile
 set number
 set wrap
 
-" edit
-set nobackup
-set noswapfile
-set clipboard+=unnamed
-set virtualedit=onemore
-
-" keymap
+" keybindings
 nmap <C-j> <C-d>
 nmap <C-k> <C-u>
 nmap <S-j> <C-f>
@@ -29,7 +26,7 @@ nnoremap - <C-x>
 nnoremap Y y$
 inoremap <silent> jj <ESC>
 
-" plugin
+" plugins
 call plug#begin()
 Plug 'cocopon/iceberg.vim'
 Plug 'editorconfig/editorconfig-vim'
