@@ -11,11 +11,6 @@ set noswapfile
 set clipboard+=unnamed
 set virtualedit=onemore
 
-" indent
-set expandtab
-set tabstop=4
-set shiftwidth=4
-
 " keymap
 nmap <C-j> <C-d>
 nmap <C-k> <C-u>
