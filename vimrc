@@ -37,6 +37,7 @@ inoremap <silent> jj <ESC>
 " plugin
 call plug#begin()
 Plug 'cocopon/iceberg.vim'
+Plug 'editorconfig/editorconfig-vim'
 Plug 'itchyny/lightline.vim'
 Plug 'tpope/vim-sensible'
 Plug 'vim-jp/vimdoc-ja'
