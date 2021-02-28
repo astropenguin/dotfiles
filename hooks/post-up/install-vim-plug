@@ -1,9 +1,0 @@
-#!/bin/bash
-
-if [ -z "$DOTINSTALL" ]; then
-    exit 0
-fi
-
-echo "Installing vim-plug ..."
-URL=https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-curl -fsSL -o ${HOME}/.vim/autoload/plug.vim --create-dirs ${URL}
