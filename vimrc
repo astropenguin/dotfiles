@@ -26,18 +26,13 @@ nnoremap - <C-x>
 nnoremap Y y$
 inoremap <silent> jj <ESC>
 
-" plugins
-call plug#begin()
-Plug 'cocopon/iceberg.vim'
-Plug 'editorconfig/editorconfig-vim'
-Plug 'itchyny/lightline.vim'
-call plug#end()
-
-" color scheme
+" plugin: iceberg
 syntax enable
 set termguicolors
 set background=dark
 colorscheme iceberg
 
-" status line
+" plugin: lightline
+set laststatus=2
+set noshowmode
 let g:lightline = {'colorscheme': 'iceberg'}
