@@ -8,7 +8,7 @@ set noundofile
 set number
 set wrap
 
-" keybindings
+" key bindings
 nmap <C-j> <C-d>
 nmap <C-k> <C-u>
 nmap <S-j> <C-f>
