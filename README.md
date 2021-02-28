@@ -5,6 +5,7 @@
 ## Usage
 
 ```shell
-$ git clone --recursive https://github.com/astropenguin/dotfiles.git ~/.dotfiles
+$ brew install rcm
+$ git clone --recursive https://github.com/astropenguin/dotfiles.git $HOME/.dotfiles
 $ env RCRC=$HOME/.dotfiles/rcrc rcup
 ```
