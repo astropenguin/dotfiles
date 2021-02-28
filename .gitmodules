@@ -4,3 +4,6 @@
 [submodule "vim/pack/essential/start/editorconfig-vim"]
 	path = vim/pack/essential/start/editorconfig-vim
 	url = https://github.com/editorconfig/editorconfig-vim.git
+[submodule "vim/pack/essential/start/lightline.vim"]
+	path = vim/pack/essential/start/lightline.vim
+	url = https://github.com/itchyny/lightline.vim.git
