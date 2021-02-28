@@ -1,3 +1,6 @@
 [submodule "vim/pack/essential/start/iceberg.vim"]
 	path = vim/pack/essential/start/iceberg.vim
 	url = https://github.com/cocopon/iceberg.vim.git
+[submodule "vim/pack/essential/start/editorconfig-vim"]
+	path = vim/pack/essential/start/editorconfig-vim
+	url = https://github.com/editorconfig/editorconfig-vim.git
