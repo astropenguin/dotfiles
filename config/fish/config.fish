@@ -1,6 +1,3 @@
-# fish: greeting
-set fish_greeting
-
 # fish aliases: rm
 if type -q gmv
     mkdir -p $HOME/.Trash
