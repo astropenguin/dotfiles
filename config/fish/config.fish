@@ -11,7 +11,7 @@ end
 
 # fish aliases: ls
 if type -q exa
-    alias ls "exa --header --git --grid --time-style=long-iso"
+    alias ls "exa --header --git --time-style=long-iso"
 end
 
 # python
