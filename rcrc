@@ -1,3 +1,0 @@
-COPY_ALWAYS="vim/*"
-DOTFILES_DIRS="~/.dotfiles ~/.dotsecrets"
-EXCLUDES="LICENSE README.md"
