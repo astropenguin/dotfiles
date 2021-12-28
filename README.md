@@ -1,15 +1,10 @@
 # dotfiles
 
-Personal dotfiles managed by rcm
+Personal dotfiles
 
 ## Usage
 
 ```shell
-$ brew install rcm
-$ git clone --recursive https://github.com/astropenguin/dotfiles.git $HOME/.dotfiles
-$ env RCRC=$HOME/.dotfiles/rcrc rcup
+$ git clone https://github.com/astropenguin/dotfiles.git
+$ dotfiles/install.sh
 ```
-
-## See also
-
-- [thoughtbot/rcm: rc file (dotfile) management](https://github.com/thoughtbot/rcm)
