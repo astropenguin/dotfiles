@@ -6,9 +6,9 @@ EXCLUDES=".DS_Store .git"
 
 
 is_dotfile () {
-    for item in $EXCLUDES
+    for name in $EXCLUDES
     do
-        if [[ "$(basename $1)" == "$item" ]]
+        if [[ "$1" == "$name" ]]
         then
             return 1
         else
@@ -18,10 +18,12 @@ is_dotfile () {
 }
 
 
-for path in $DOTFILES/.??*
+for file in $DOTFILES/.??*
 do
-    if is_dotfile $path
+    base="$(basename "$file")"
+
+    if is_dotfile "$base"
     then
-        ln -fs "$path" "$HOME/$(basename $path)"
+        ln -fs "$file" "$HOME/$base"
     fi
 done
