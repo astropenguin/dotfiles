@@ -1,29 +1,25 @@
 #!/bin/bash -eu
 
 
-DOTFILES="$(cd "$(dirname "$BASH_SOURCE")" && pwd)"
-EXCLUDES=".DS_Store .git"
+find_dotfiles () {
+    find "$DOTFILES" \
+        -not -name ".DS_Store" \
+        -not -name "install.sh" \
+        -not -name "LICENSE" \
+        -not -name "README.md" \
+        -not -path "*/.git/*" \
+        -type f
+}
 
 
-is_dotfile () {
-    for name in $EXCLUDES
+deploy_dotfiles () {
+    while read abspath
     do
-        if [[ "$1" == "$name" ]]
-        then
-            return 1
-        else
-            continue
-        fi
+        relpath="${abspath:${#DOTFILES}+1}"
+        ln -fs "$abspath" "$HOME/$relpath"
     done
 }
 
 
-for file in $DOTFILES/.??*
-do
-    base="$(basename "$file")"
-
-    if is_dotfile "$base"
-    then
-        ln -fs "$file" "$HOME/$base"
-    fi
-done
+DOTFILES="$(cd "$(dirname "$BASH_SOURCE")" && pwd)"
+find_dotfiles | deploy_dotfiles
