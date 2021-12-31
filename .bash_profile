@@ -1,11 +1,12 @@
-# Homebrew (macOS ARM)
-if [[ -e /opt/homebrew/bin/brew ]]
+# Common profile for bash and zsh
+if [[ -e "$HOME/.common_profile" ]]
 then
-    eval "$(/opt/homebrew/bin/brew shellenv)"
+    source "$HOME/.common_profile"
 fi
 
-# Homebrew (macOS Intel)
-if [[ -e /usr/local/bin/brew ]]
+
+# Bash settings (if any)
+if [[ -e "$HOME/.bashrc" ]]
 then
-    eval "$(/usr/local/bin/brew shellenv)"
+    source "$HOME/.bashrc"
 fi
