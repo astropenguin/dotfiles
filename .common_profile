@@ -1,3 +1,10 @@
+# Editor
+if type vim &>/dev/null
+then
+    export EDITOR=vim
+fi
+
+
 # Homebrew (macOS ARM)
 if [[ -e /opt/homebrew/bin/brew ]]
 then
