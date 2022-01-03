@@ -1,4 +1,4 @@
-#!/bin/bash -eu
+#!/bin/sh -eu
 
 
 find_dotfiles () {
@@ -22,5 +22,5 @@ deploy_dotfiles () {
 }
 
 
-DOTFILES="$(cd "$(dirname "$BASH_SOURCE")" && pwd)"
+DOTFILES="$(cd "$(dirname "${BASH_SOURCE:-$0}")" && pwd)"
 find_dotfiles | deploy_dotfiles
