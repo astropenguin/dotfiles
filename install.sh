@@ -15,7 +15,7 @@ find_dotfiles () {
 deploy_dotfiles () {
     while read dotfile
     do
-        link="$HOME/${abspath:${#DOTFILES}+1}"
+        link="$HOME/${dotfile:${#DOTFILES}+1}"
         mkdir -p "$(dirname "$link")"
         ln -fs "$dotfile" "$link"
     done
