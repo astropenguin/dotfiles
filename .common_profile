@@ -17,3 +17,17 @@ if [[ -e /usr/local/bin/brew ]]
 then
     eval "$(/usr/local/bin/brew shellenv)"
 fi
+
+
+# Homebrew (Linux admin)
+if [[ -e /home/linuxbrew/.linuxbrew/bin/brew ]]
+then
+    eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+fi
+
+
+# Homebrew (Linux non-admin)
+if [[ -e "$HOME/.linuxbrew/bin/brew" ]]
+then
+    eval "$("$HOME/.linuxbrew/bin/brew" shellenv)"
+fi
