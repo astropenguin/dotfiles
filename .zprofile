@@ -5,6 +5,13 @@ then
 fi
 
 
+# Local profile (if any)
+if [[ -e "$HOME/.zprofile.local" ]]
+then
+    source "$HOME/.zprofile.local"
+fi
+
+
 # Zsh settings (if any)
 if [[ -e "$HOME/.zshrc" ]]
 then
