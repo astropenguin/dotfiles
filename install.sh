@@ -2,22 +2,25 @@
 
 
 find_dotfiles () {
-    find "$DOTFILES" \
+    cd "$DOTFILES"
+    find . \
         -not -name ".DS_Store" \
         -not -name "install.sh" \
         -not -name "LICENSE" \
         -not -name "README.md" \
         -not -path "*/.git/*" \
-        -type f
+        -type f \
+    | cut -d / -f 2-
 }
 
 
 deploy_dotfiles () {
     while read dotfile
     do
-        link="$HOME/${dotfile:${#DOTFILES}+1}"
+        src="$DOTFILES/$dotfile"
+        link="$HOME/$dotfile"
         mkdir -p "$(dirname "$link")"
-        ln -fs "$dotfile" "$link"
+        ln -fs "$src" "$link"
     done
 }
 
