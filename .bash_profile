@@ -5,6 +5,13 @@ then
 fi
 
 
+# Local profile (if any)
+if [[ -e "$HOME/.bash_profile.local" ]]
+then
+    source "$HOME/.bash_profile.local"
+fi
+
+
 # Bash settings (if any)
 if [[ -e "$HOME/.bashrc" ]]
 then

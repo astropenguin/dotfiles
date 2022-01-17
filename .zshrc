@@ -6,9 +6,9 @@ fi
 
 
 # Local settings (if any)
-if [[ -e "$HOME/.localrc" ]]
+if [[ -e "$HOME/.zshrc.local" ]]
 then
-    source "$HOME/.localrc"
+    source "$HOME/.zshrc.local"
 fi
 
 

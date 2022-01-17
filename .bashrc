@@ -6,7 +6,7 @@ fi
 
 
 # Local settings (if any)
-if [[ -e "$HOME/.localrc" ]]
+if [[ -e "$HOME/.bashrc.local" ]]
 then
-    source "$HOME/.localrc"
+    source "$HOME/.bashrc.local"
 fi
