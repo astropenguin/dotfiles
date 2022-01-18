@@ -1,7 +1,9 @@
-[user]
-	name = Akio Taniguchi
-	email = taniguchi@a.phys.nagoya-u.ac.jp
 [core]
 	excludesfile = ~/.gitignore_global
+[init]
+	defaultBranch = main
 [pull]
 	rebase = false
+[user]
+	email = taniguchi@a.phys.nagoya-u.ac.jp
+	name = Akio Taniguchi
