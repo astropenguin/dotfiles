@@ -1,8 +1,8 @@
 #!/bin/sh -eu
 
 
-find_dotfiles () {
-    cd "$DOTFILES"
+list_dotfiles () {
+    cd "$REPOSITORY"
     find . \
         -not -name ".DS_Store" \
         -not -name "install.sh" \
@@ -17,7 +17,7 @@ find_dotfiles () {
 deploy_dotfiles () {
     while read dotfile
     do
-        src="$DOTFILES/$dotfile"
+        src="$REPOSITORY/$dotfile"
         link="$HOME/$dotfile"
         mkdir -p "$(dirname "$link")"
         ln -fs "$src" "$link"
@@ -25,5 +25,5 @@ deploy_dotfiles () {
 }
 
 
-DOTFILES="$(cd "$(dirname "${BASH_SOURCE:-$0}")" && pwd)"
-find_dotfiles | deploy_dotfiles
+REPOSITORY="$(cd "$(dirname "${BASH_SOURCE:-$0}")" && pwd)"
+list_dotfiles | deploy_dotfiles
